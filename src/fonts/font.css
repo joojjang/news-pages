@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chromate';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Chromate-Regular.woff') format('woff');
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+  font-family: "Nanum Gothic", Arial;
+}
+
+:root {
+    --bow-shadow-blur: 6px;
+    --box-shadow-color: #e0e0e0;
+    
+    --category-width: 14vw;
+    --category-height: 9vh;
+    --category-font-size: 1.2rem;
+}
+
+.Sidebar {
+    width: calc(var(--category-width) + 7vw);
+    height: 100vh - var(--header-height);
+    padding-bottom: 100px;
+
+    background: #f1f6ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.categories-container {
+    /* position: fixed; 화면이 움직여도 고정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 요소들을 세로로 배열 */
+}
+
+#categories-icon {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 10px;
+}
+#categories-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--category-width);
+    height: var(--category-height);
+    /* background-color: #d7e4ff; */
+
+    font-size: var(--category-font-size);
+}
+
+#categories-list {
+    /* 컨테이너 쉐입&컬러 */
+    border: thin solid #c2c2c2;
+    box-shadow: 0 5px 5px #e0e0e0;
+    border-radius: 9px;
+
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 배열 */
+    justify-content: center;
+}
+.categories-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex: 1 1 0; */
+    width: var(--category-width);
+    height: var(--category-height);
+    background-color: transparent;
+    border: none;
+    /* border-radius: 9px; */
+    
+    font-size: var(--category-font-size);
+
+    cursor: pointer;
+}
+.categories-btn:hover {
+    background-color: white;
+    color: #0357ff;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+.categories-btn.active {
+    color: #0357ff;
+    font-weight: bold;
+}
+#categories-politics-btn {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#categories-sports-btn {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
